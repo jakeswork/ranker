@@ -1,0 +1,2 @@
+# ranker
+Lightweight ranking calculator
