@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Button instance when called with default properties should render without throwing errors 1`] = `ShallowWrapper {}`;
+
+exports[`The Button instance when the secondary prop is passed should render a secondary button 1`] = `ShallowWrapper {}`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Text instance When rendered with default props should render a <p /> tag 1`] = `ShallowWrapper {}`;
+
+exports[`The Text instance when rendered with caption set to true should render a <caption /> tag 1`] = `ShallowWrapper {}`;
+
+exports[`The Text instance when rendered with h1 set to true should render a <h1 /> tag 1`] = `ShallowWrapper {}`;
+
+exports[`The Text instance when rendered with h2 set to true should render a <h2 /> tag 1`] = `ShallowWrapper {}`;
+
+exports[`The Text instance when rendered with h3 set to true should render a <h3 /> tag 1`] = `ShallowWrapper {}`;
