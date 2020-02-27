@@ -18,6 +18,10 @@ export default ({ classes }: IRankSelectionProps) => {
   const nextWeekRank = ranks.find(rank => rank.baseRp < nextWeekRp)
   const nextWeekRankPercentage = nextWeekRank &&
     ((nextWeekRp - nextWeekRank.baseRp) / 5000) * 100
+  const nextWeek = {
+    diff: nextWeekRank && nextWeekRp - nextWeekRank.baseRp,
+    percentage: nextWeekRankPercentage
+  }
 
   return (
     <Fragment>
@@ -55,15 +59,13 @@ export default ({ classes }: IRankSelectionProps) => {
       </div>
       {
         bracketSelected && rankSelected && (
-          <Fragment>
-            <Text h3>Your rank next week will be</Text>
-            <div style={{ width: '50%' }}>
-              <RankCard
-                rank={nextWeekRank || ranks[0]}
-                percentage={nextWeekRank && nextWeekRp - nextWeekRank.baseRp}
-              />
-            </div>
-          </Fragment>
+          <div className={classes.half}>
+            <Text h3 style={{ marginBottom: 16 }}>Your rank next week will be</Text>
+            <RankCard
+              rank={nextWeekRank || ranks[0]}
+              percentage={nextWeek}
+            />
+          </div>
         )
       }
     </Fragment>

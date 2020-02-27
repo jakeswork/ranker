@@ -23,5 +23,8 @@ export default (theme: Theme) => ({
     width: 192,
     marginLeft: 64,
     backgroundColor: 'transparent'
+  },
+  percentage: {
+    marginLeft: 32
   }
 });

@@ -12,6 +12,7 @@ export default {
     overflowY: 'scroll' as 'scroll'
   },
   half: {
-    width: '50%'
+    width: 520,
+    margin: '0 auto',
   }
 };
