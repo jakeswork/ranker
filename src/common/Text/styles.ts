@@ -5,7 +5,8 @@ const defaultStyles = (theme: Theme) => ({
   fontFamily: theme.fontFamily,
   fontWeight: 700,
   margin: 0,
-  marginBottom: 4
+  marginBottom: 4,
+  textDecoration: 'none'
 });
 
 export default (theme: Theme) => {

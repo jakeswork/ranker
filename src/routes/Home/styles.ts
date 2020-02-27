@@ -1,7 +1,11 @@
 export default {
-  anchorBottom: {
-    position: "absolute" as "absolute",
-    bottom: 32
+  footer: {
+    position: "fixed" as "fixed",
+    bottom: 0,
+    left: 0,
+    right: 0,
+    margin: '32px auto',
+    textAlign: 'center' as 'center',
   },
   container: {
     position: "relative" as "relative",

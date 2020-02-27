@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import { Classes } from 'jss';
 
 import { Text } from '../../../../common';
@@ -12,8 +12,8 @@ export interface IRankSelectionProps {
 }
 
 export default ({ classes }: IRankSelectionProps) => {
-  const [rankSelected, setRankSelected] = useState({ number: 0, baseRp: 0 })
-  const [bracketSelected, setBracketSelected] = useState(0)
+  const [rankSelected, setRankSelected] = useState(ranks[1])
+  const [bracketSelected, setBracketSelected] = useState(brackets[0].rp)
   const nextWeekRp = (rankSelected.baseRp * 0.8) + bracketSelected
   const nextWeekRank = ranks.find(rank => rank.baseRp < nextWeekRp)
   const nextWeekRankPercentage = nextWeekRank &&
@@ -24,7 +24,7 @@ export default ({ classes }: IRankSelectionProps) => {
   }
 
   return (
-    <Fragment>
+    <>
       <div className={classes.root}>
         <div className={classes.half}>
           <Text h3>Select your current rank</Text>
@@ -43,7 +43,7 @@ export default ({ classes }: IRankSelectionProps) => {
         </div>
         <div className={classes.half}>
           <Text h3>Select your bracket for this week</Text>
-          <div className={classes.overflow}>
+          <div className={classes.overflow} style={{ overflow: 'hidden' }}>
             {
               brackets.map(bracket => (
                 <BracketCard
@@ -57,17 +57,13 @@ export default ({ classes }: IRankSelectionProps) => {
           </div>
         </div>
       </div>
-      {
-        bracketSelected && rankSelected && (
-          <div className={classes.half}>
-            <Text h3 style={{ marginBottom: 16 }}>Your rank next week will be</Text>
-            <RankCard
-              rank={nextWeekRank || ranks[0]}
-              percentage={nextWeek}
-            />
-          </div>
-        )
-      }
-    </Fragment>
+      <div className={classes.half}>
+        <Text h3 style={{ marginBottom: 16 }}>Your rank next week will be</Text>
+        <RankCard
+          rank={nextWeekRank || ranks[0]}
+          percentage={nextWeek}
+        />
+      </div>
+    </>
   );
 };

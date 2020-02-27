@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import cx from 'classnames';
 import { Classes } from 'jss';
 import Slider, { createSliderWithTooltip } from 'rc-slider';
@@ -50,7 +50,7 @@ export default ({ rank, classes, onSelect, isActive, percentage }: IRankCardProp
     }
     {
       percentage && percentage.percentage && (
-        <Fragment>
+        <>
           <Slider
             disabled
             className={classes.slider}
@@ -66,7 +66,7 @@ export default ({ rank, classes, onSelect, isActive, percentage }: IRankCardProp
             value={percentage.diff}
           />
           <Text caption className={classes.percentage}>{Math.round(percentage.percentage)}%</Text>
-        </Fragment>
+        </>
       )
     }
   </Card>
