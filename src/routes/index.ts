@@ -3,7 +3,7 @@ import { RouteConfiguration } from "../index.d";
 
 const routes: RouteConfiguration[] = [
   {
-    path: "/",
+    path: "/ranker/",
     Component: Home
   },
 ];
