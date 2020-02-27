@@ -6,6 +6,7 @@ import "reset-css";
 import "circular-std";
 
 import { RouteConfiguration } from "./index.d";
+import "./index.css";
 import routes from "./routes";
 import theme from "./utils/theme";
 

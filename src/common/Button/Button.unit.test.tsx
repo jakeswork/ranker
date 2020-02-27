@@ -4,7 +4,12 @@ import { shallow } from "enzyme";
 import Button from "./Button";
 
 const defaultProps = {
-  classes: {}
+  classes: {
+    button: "",
+    secondary: "",
+    flat: "",
+    buttonIcon: ""
+  }
 };
 
 describe("The Button instance", () => {

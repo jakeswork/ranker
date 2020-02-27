@@ -1,7 +1,7 @@
 import { Theme } from "../../utils/theme";
 
-const defaultStyles = (theme: Theme, light?: Boolean) => ({
-  color: light ? theme.textWhite : theme.textPrimary,
+const defaultStyles = (theme: Theme) => ({
+  color: theme.textLight,
   fontFamily: theme.fontFamily,
   fontWeight: 700,
   margin: 0,
@@ -14,16 +14,18 @@ export default (theme: Theme) => {
   return {
     h1: {
       ...defaults,
-      fontSize: 30,
-      marginBottom: 8
+      fontSize: 48,
+      marginBottom: 16,
+      color: 'white'
     },
     h2: {
       ...defaults,
-      fontSize: 24
+      fontSize: 36,
+      marginBottom: 8
     },
     h3: {
       ...defaults,
-      fontSize: 16
+      fontSize: 24
     },
     caption: {
       ...defaults,
@@ -31,7 +33,8 @@ export default (theme: Theme) => {
       fontSize: 12,
       letterSpacing: "0.08333333333333333em",
       marginBottom: 0,
-      textTransform: "uppercase" as "uppercase"
+      textTransform: "uppercase" as "uppercase",
+      color: theme.colorActive,
     },
     p: {
       ...defaults,

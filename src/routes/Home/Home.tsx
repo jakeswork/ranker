@@ -1,23 +1,19 @@
 import React, { FC } from "react";
 import { Classes } from "jss";
 
-import globalStyles from '../../utils/globalStyles';
-import Text from "../../components/Text";
+import { Text } from "../../common";
+import RankSelection from './components/RankSelection';
 
 interface IHomeProps {
   classes: Classes
 }
 
-const Home: FC<IHomeProps> = ({ classes = {} }) => {
-  const globals = globalStyles()
-
-  return (
-    <div className={classes.container}>
-      <main className={globals.fullScreen}>
-        <Text h1>Hello, World</Text>
-      </main>
-    </div>
-  );
-};
+const Home: FC<IHomeProps> = ({ classes = {} }) => (
+  <main className={classes.container}>
+    <Text h1>Ranker</Text>
+    <Text>The lightweight ranking calculator</Text>
+    <RankSelection />
+  </main>
+);
 
 export default Home;

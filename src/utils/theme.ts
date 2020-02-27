@@ -15,10 +15,12 @@ export interface Theme {
   colorBlue: Color;
   colorAmber: Color;
   colorGrey: Color;
-  textPrimary: Color;
+  colorDark: Color;
+  textDark: Color;
   textSecondary: Color;
-  textWhite: Color;
+  textLight: Color;
   colorRandom(): string;
+  colorActive: Color;
   media: ThemeMedia;
 }
 
@@ -34,9 +36,11 @@ const theme: Theme = {
   colorBlue,
   colorAmber,
   colorGrey: "#ebebeb",
-  textPrimary: "#484848",
+  colorActive: "#04d2ac",
+  colorDark: "#292c3e",
+  textDark: "#505050",
   textSecondary: "#906e62",
-  textWhite: "#f7ffff",
+  textLight: "#dadde1",
   media: {
     mobile: "@media all and (max-width: 414px)"
   },

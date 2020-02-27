@@ -4,7 +4,11 @@ export default {
     bottom: 32
   },
   container: {
-    position: "relative" as "relative"
+    position: "relative" as "relative",
+    padding: 36,
+    width: 1356,
+    maxWidth: '80%',
+    margin: '64px auto',
   },
   header: {
     position: "absolute" as "absolute",
