@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ranker/static/css/main.62423486.chunk.css",
-    "main.js": "/ranker/static/js/main.1205e6fc.chunk.js",
-    "main.js.map": "/ranker/static/js/main.1205e6fc.chunk.js.map",
+    "main.js": "/ranker/static/js/main.1e6ee93b.chunk.js",
+    "main.js.map": "/ranker/static/js/main.1e6ee93b.chunk.js.map",
     "runtime-main.js": "/ranker/static/js/runtime-main.148b63c3.js",
     "runtime-main.js.map": "/ranker/static/js/runtime-main.148b63c3.js.map",
     "static/css/2.ae3ad693.chunk.css": "/ranker/static/css/2.ae3ad693.chunk.css",
     "static/js/2.82c0eaee.chunk.js": "/ranker/static/js/2.82c0eaee.chunk.js",
     "static/js/2.82c0eaee.chunk.js.map": "/ranker/static/js/2.82c0eaee.chunk.js.map",
     "index.html": "/ranker/index.html",
-    "precache-manifest.526ccded66815176e85f1d9896d2e768.js": "/ranker/precache-manifest.526ccded66815176e85f1d9896d2e768.js",
+    "precache-manifest.096642410ba7d2f5fbf0925ec2b05014.js": "/ranker/precache-manifest.096642410ba7d2f5fbf0925ec2b05014.js",
     "service-worker.js": "/ranker/service-worker.js",
     "static/css/2.ae3ad693.chunk.css.map": "/ranker/static/css/2.ae3ad693.chunk.css.map",
     "static/css/main.62423486.chunk.css.map": "/ranker/static/css/main.62423486.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.ae3ad693.chunk.css",
     "static/js/2.82c0eaee.chunk.js",
     "static/css/main.62423486.chunk.css",
-    "static/js/main.1205e6fc.chunk.js"
+    "static/js/main.1e6ee93b.chunk.js"
   ]
 }
