@@ -3,7 +3,7 @@ import { Theme } from "../../../../../../utils/theme";
 export default (theme: Theme) => ({
   rankImage: {
     width: 24,
-    marginRight: 16
+    marginBottom: 16
   },
   card: {
     display: 'flex',
@@ -11,6 +11,10 @@ export default (theme: Theme) => ({
     cursor: 'pointer',
     backgroundColor: theme.colorDark,
     border: `1px solid ${theme.colorDark}`,
+    width: 164,
+    flexDirection: 'column' as 'column',
+    justifyContent: 'center',
+    padding: 24
   },
   cardText: {
     fontWeight: 700,
@@ -20,11 +24,11 @@ export default (theme: Theme) => ({
     border: `1px solid ${theme.colorActive}`,
   },
   slider: {
-    width: 192,
-    marginLeft: 64,
+    width: 124,
+    marginTop: 8,
     backgroundColor: 'transparent'
   },
   percentage: {
-    marginLeft: 32
-  }
+    marginTop: 16,
+  },
 });

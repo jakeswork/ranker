@@ -19,8 +19,6 @@ export default ({ bracket, classes, onSelect, isActive }: IBracketCardProps) => 
     className={cx([classes.card, { [classes.active]: isActive }])}
   >
     <Text className={classes.cardText}>{bracket.name}</Text>
-    {
-      isActive && <Text caption>Assuming {bracket.rp} RP (top of bracket)</Text>
-    }
+    <Text caption>Assuming {bracket.rp} RP</Text>
   </Card>
 );

@@ -1,4 +1,4 @@
-import { Theme } from "../../utils/theme";
+import theme, { Theme } from "../../utils/theme";
 import { IButtonProps } from "./Button";
 
 export const defaultButtonStyle = {
@@ -16,7 +16,7 @@ export const defaultButtonStyle = {
   margin: 8,
   borderRadius: 4,
   cursor: "pointer",
-  fontFamily: "inherit",
+  fontFamily: theme.fontFamily,
   padding: "12px 32px"
 };
 
@@ -41,7 +41,7 @@ export default (theme: Theme) => ({
 
       if (success) return theme.colorGreen;
 
-      return theme.colorPrimary;
+      return theme.colorActive;
     },
     border: 0,
     color: "#fff",
@@ -50,12 +50,12 @@ export default (theme: Theme) => ({
   secondary: {
     ...defaultButtonStyle,
     backgroundColor: "transparent",
-    border: `1px solid ${theme.colorPrimary}`,
-    color: theme.colorPrimary
+    border: `1px solid ${theme.colorActive}`,
+    color: theme.colorActive
   },
   flat: {
     ...defaultButtonStyle,
-    color: theme.colorPrimary,
+    color: theme.colorActive,
     border: 0,
     WebkitBoxShadow: "0",
     boxShadow: "0",

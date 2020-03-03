@@ -4,8 +4,11 @@ export default {
     bottom: 0,
     left: 0,
     right: 0,
-    margin: '32px auto',
+    margin: '0 auto',
+    paddingBottom: 32,
+    paddingTop: 32,
     textAlign: 'center' as 'center',
+    background: 'rgba(0, 0, 0, 0.4)'
   },
   container: {
     position: "relative" as "relative",

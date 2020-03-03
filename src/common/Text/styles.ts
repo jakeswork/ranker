@@ -26,7 +26,8 @@ export default (theme: Theme) => {
     },
     h3: {
       ...defaults,
-      fontSize: 24
+      fontSize: 24,
+      marginTop: 48
     },
     caption: {
       ...defaults,
@@ -35,6 +36,7 @@ export default (theme: Theme) => {
       letterSpacing: "0.08333333333333333em",
       marginBottom: 0,
       textTransform: "uppercase" as "uppercase",
+      userSelect: 'none' as 'none',
       color: theme.colorActive,
     },
     p: {

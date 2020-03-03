@@ -32,8 +32,8 @@ const Button: FC<IButtonProps> = ({
   if (flat) cn = classes.flat;
 
   return (
-    <button disabled={disabled || success} {...props} className={classNames(cn, className)}>
-      { danger ? "Error" : success ? "Success!" : children }
+    <button disabled={disabled} {...props} className={classNames(cn, className)}>
+      { children }
       { icon && React.cloneElement(icon, { className: classes.buttonIcon }) }
     </button>
   );
