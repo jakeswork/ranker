@@ -35,7 +35,7 @@ const theme: Theme = {
   colorGreen,
   colorBlue,
   colorAmber,
-  colorGrey: "#ebebeb",
+  colorGrey: "#69696b",
   colorActive: "#04d2ac",
   colorDark: "#292c3e",
   textDark: "#505050",

@@ -55,7 +55,7 @@ export default (theme: Theme) => ({
   },
   flat: {
     ...defaultButtonStyle,
-    color: theme.colorActive,
+    color: ({ disabled }: IButtonProps) => disabled ? theme.colorGrey : theme.colorActive,
     border: 0,
     WebkitBoxShadow: "0",
     boxShadow: "0",

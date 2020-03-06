@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Classes } from "jss";
+import { OutboundLink } from 'react-ga';
 
 import { Text } from "../../common";
 import { Planner } from './components';
@@ -9,33 +10,40 @@ interface IHomeProps {
 }
 
 const Home: FC<IHomeProps> = ({ classes = {} }) => (
-  <main className={classes.container}>
-    <Text h1>Ranker</Text>
-    <Text>The lightweight ranking calculator</Text>
-    <Planner />
+  <>
+    <main className={classes.container}>
+      <Text h1>Ranker</Text>
+      <Text>The lightweight ranking calculator.</Text>
+      <Planner />
+    </main>
     <footer className={classes.footer}>
-      <Text>
-        Made with ❤ by Apparent. I'm on&nbsp;
-        <a
+      <Text style={{ marginBottom: 16 }}>Made with ❤ by Apparent - Ten Storms (EU)</Text>
+      <Text style={{ marginBottom: 16, fontWeight: 700 }}>
+        In-game donations are appreciated <span role="img" aria-label="smiley-face">😊</span>
+      </Text>
+      <div>
+        <OutboundLink
           style={{ textDecoration: 'none' }}
           rel="noopener noreferrer"
-          href="https://www.twitch.tv/apparentt"
+          to="https://www.twitch.tv/apparentt"
           target="_blank"
+          eventLabel="Twitch Link"
         >
           <Text caption>Twitch</Text>
-        </a>
-        &nbsp;and&nbsp;
-        <a
+        </OutboundLink>
+        &nbsp;<span style={{ color: 'white '}}>|</span>&nbsp;
+        <OutboundLink
           style={{ textDecoration: 'none' }}
           rel="noopener noreferrer"
-          href="https://www.youtube.com/c/apparentt"
+          to="https://www.youtube.com/c/apparentt"
           target="_blank"
+          eventLabel="YouTube Link"
         >
           <Text caption>YouTube</Text>
-        </a>
-      </Text>
+        </OutboundLink>
+      </div>
     </footer>
-  </main>
+  </>
 );
 
 export default Home;

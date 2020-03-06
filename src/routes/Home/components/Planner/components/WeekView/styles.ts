@@ -15,6 +15,7 @@ export default (theme: Theme) => ({
   },
   tableData: {
     padding: 16,
+    width: '20%',
   },
   resetButton: {
     position: 'absolute' as 'absolute',

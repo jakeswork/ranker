@@ -9,6 +9,9 @@ import { RouteConfiguration } from "./index.d";
 import "./index.css";
 import routes from "./routes";
 import theme from "./utils/theme";
+import GA from './third-party/GoogleAnalytics';
+
+GA.init();
 
 const App: FC = (): ReactElement => (
   <ThemeProvider theme={theme}>
