@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "688ebc6e9e973fb6c519b69302274170",
+    "revision": "771f7145f4e1b6fa00378dc198dc8ae1",
     "url": "/ranker/index.html"
   },
   {
-    "revision": "6f505c2dd4a1b64f2a6d",
+    "revision": "9fed2131f835388d022b",
     "url": "/ranker/static/css/2.071fdaf6.chunk.css"
   },
   {
-    "revision": "edf55e4e2cb71b1d8f4c",
+    "revision": "cccb8b2519c078c8a1f4",
     "url": "/ranker/static/css/main.62423486.chunk.css"
   },
   {
-    "revision": "6f505c2dd4a1b64f2a6d",
-    "url": "/ranker/static/js/2.5d5ab6c3.chunk.js"
+    "revision": "9fed2131f835388d022b",
+    "url": "/ranker/static/js/2.a083f050.chunk.js"
   },
   {
     "revision": "e933f8dbfdf496cb72e495663a499a00",
-    "url": "/ranker/static/js/2.5d5ab6c3.chunk.js.LICENSE.txt"
+    "url": "/ranker/static/js/2.a083f050.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "edf55e4e2cb71b1d8f4c",
-    "url": "/ranker/static/js/main.631c5de0.chunk.js"
+    "revision": "cccb8b2519c078c8a1f4",
+    "url": "/ranker/static/js/main.53ea8b01.chunk.js"
   },
   {
     "revision": "8679da83ff7e0a95627c",
