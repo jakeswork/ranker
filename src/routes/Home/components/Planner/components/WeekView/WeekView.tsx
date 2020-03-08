@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FiCalendar, FiTrash } from 'react-icons/fi';
 import { Classes } from 'jss';
 import Select from 'react-select';
+import { DateTime } from 'luxon';
 
 import { Text, Button } from '../../../../../../common'
 import brackets, { Bracket } from '../../../../../../data/brackets';
@@ -149,6 +150,8 @@ export default class WeekView extends Component<IWeekViewProps, IWeekViewState> 
       value: bracket,
       label: bracket.name
     }))
+    const resetStartDay = DateTime.local().set({ weekday: 3 });
+    const resetEndDay = resetStartDay.plus({ weeks: 1 });
 
     return (
       <>
@@ -160,7 +163,7 @@ export default class WeekView extends Component<IWeekViewProps, IWeekViewState> 
                 <Text caption>Week</Text>
               </th>
               <th className={classes.tableHeader}>
-                <Text caption>Bracket</Text>
+                <Text caption>Bracket (Max RP)</Text>
               </th>
               <th className={classes.tableHeader}>
                 <Text caption>Starting At</Text>
@@ -176,7 +179,11 @@ export default class WeekView extends Component<IWeekViewProps, IWeekViewState> 
               weeks.map((week: Week, i) => (
                 <tr key={week.endRp}>
                   <td className={classes.tableData} align="center">
-                    <Text className={classes.tableText}>{i + 1}</Text>
+                    <Text className={classes.tableText}>
+                      {resetStartDay.plus({ weeks: i }).toLocaleString({ month: 'short', day: 'numeric' })}
+                      &nbsp;-&nbsp;
+                      {resetEndDay.plus({ weeks: i }).toLocaleString({ month: 'short', day: 'numeric' })}
+                    </Text>
                   </td>
                   <td className={classes.tableData} align="center">
                     <Select

@@ -7,6 +7,10 @@ import rank09 from "../images/PvPRank09.png";
 import rank08 from "../images/PvPRank08.png";
 import rank07 from "../images/PvPRank07.png";
 import rank06 from "../images/PvPRank06.png";
+import rank05 from "../images/PvPRank05.png";
+import rank04 from "../images/PvPRank04.png";
+import rank03 from "../images/PvPRank03.png";
+import rank02 from "../images/PvPRank02.png";
 
 export interface Rank {
   number: number;
@@ -80,6 +84,34 @@ const ranks: Rank[] = [
     baseRp: 20000,
     newRp: 20001
   },
+  {
+    number: 5,
+    title: "First Sergeant / Sergeant Major",
+    image: rank05,
+    baseRp: 15000,
+    newRp: 15001
+  },
+  {
+    number: 4,
+    title: "Senior Sergeant / Master Sergeant",
+    image: rank04,
+    baseRp: 10000,
+    newRp: 10001
+  },
+  {
+    number: 3,
+    title: "Sergeant",
+    image: rank03,
+    baseRp: 5000,
+    newRp: 5001
+  },
+  {
+    number: 2,
+    title: "Grunt / Corporal",
+    image: rank02,
+    baseRp: 2000,
+    newRp: 2001
+  }
 ]
 
 export default ranks
