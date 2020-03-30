@@ -17,7 +17,7 @@ const Home: FC<IHomeProps> = ({ classes = {} }) => (
       <Planner />
     </main>
     <footer className={classes.footer}>
-      <Text style={{ marginBottom: 16 }}>Made with ❤ by Apparent - Ten Storms (EU)</Text>
+      <Text style={{ marginBottom: 16 }}>Made with ❤ by Apparent - Earthshaker (EU)</Text>
       <Text style={{ marginBottom: 16, fontWeight: 700 }}>
         In-game donations are appreciated <span role="img" aria-label="smiley-face">😊</span>
       </Text>
